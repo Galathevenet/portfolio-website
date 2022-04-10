@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
       flash.now[:success] = 'Message sent!'
     else
       flash.now[:error] = 'Could not send message'
-      render :new
+      render 'projects/index'
     end
   end
 end
