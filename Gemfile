@@ -33,6 +33,7 @@ gem 'font-awesome-sass'
 gem 'simple_form', github: 'heartcombo/simple_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'mail_form'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 group :development, :test do
   gem 'pry-byebug'
