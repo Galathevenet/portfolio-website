@@ -8,7 +8,7 @@
 
 <div class="container">
   <h2>Contact Form</h2>
-  <%= form_for @contact, url: projects_path, method: :post do |f| %>
+  <%= form_for @contact, url: contacts_path, method: :post do |f| %>
     <div class="col-md-6">
       <%= f.label :name %></br>
       <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
