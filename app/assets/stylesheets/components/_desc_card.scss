@@ -2,4 +2,12 @@
   width: 28%;
   border: 1px solid;
   text-align: center;
+  background-color: #FFF4CA;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 5px 7px 8px 1px rgba(90, 82, 3, 0.3);
+
+  .desc-text {
+    text-align: justify;
+  }
 }
