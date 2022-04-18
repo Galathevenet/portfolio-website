@@ -20,6 +20,9 @@
   background: #EFBB32;
   text-decoration: none;
   transition: 0.3s ease;
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
 
   &:hover {
     border: 2px solid #EFBB32;
