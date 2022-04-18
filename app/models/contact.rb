@@ -1,4 +1,4 @@
-class Contact < ApplicationRecord
+class Contact < MailForm::Base
   include MailForm::Delivery
 
   attribute :name,      validate: true
@@ -10,7 +10,7 @@ class Contact < ApplicationRecord
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Contact Form Inquiry",
+      :subject => "Website contact !",
       :to => "gala.thevenet@gmail.com",
       :from => %("#{name}" <#{email}>)
     }
