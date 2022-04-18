@@ -31,3 +31,19 @@
     transition: 0.2s ease;
   }
 }
+
+.btn-form {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: $yellow;
+  text-decoration: none;
+  transition: 0.4s ease;
+
+  &:hover {
+    border: 2px solid $yellow;
+    background: white;
+    color: $yellow;
+    transition: 0.2s ease;
+  }
+}
