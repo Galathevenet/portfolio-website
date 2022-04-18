@@ -16,7 +16,6 @@
     <%= render 'shared/navbar' %>
 
     <div class="container">
-      <br>
       <% flash.each do |key, message| %>
       <p class="alert alert-<%= key %>"><%= message %></p>
   <% end %>
