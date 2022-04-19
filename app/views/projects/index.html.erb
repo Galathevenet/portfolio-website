@@ -84,18 +84,43 @@
           <p>
             Coded in <strong>10 days</strong>
           </p>
-          <%= link_to project_path(@woolks), class: "card-size" do %>
+        <%= link_to project_path(@woolks), class: "card-link" do %>
+        <% end %>
       </div>
-    <% end %>
+
+      <div class="project-card">
+        <h2>Pig Rent</h2>
+        <p>
+          <strong>Team</strong> Project
+        </p>
+        <p>
+          <i>4 teammates</i>
+        </p>
+        <p>
+          Airbnb Clone to connect farmers and individuals
+        </p>
+        <p>
+          Coded in <strong>4 days</strong>
+        </p>
+        <%= link_to project_path(@pig_rent), class: "card-link" do %>
+        <% end %>
+      </div>
 
     <div class="new-project-card">
-        <h2>Soon</h2>
-          <p class="justify-desc-text">
-            Many more to come !
-            Current project : building a website for an auto-fix bike workshop
-            in Cahors "La Véloterie"
-          </p>
-      </div>
+      <h2>Coming Soon</h2>
+      <p>
+        <strong>Solo</strong> Project
+      </p>
+      <p>
+        <i>Volunteering</i>
+      </p>
+      <p>
+        Website for an auto-fix bike workshop
+      </p>
+      <p>
+        La Vé<strong>lot</strong>erie
+      </p>
+    </div>
   </div>
       <%= render "contacts/contact_form" %>
 </div>

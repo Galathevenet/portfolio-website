@@ -27,7 +27,7 @@
 
 }
 
-.card-size {
+.card-link {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -38,10 +38,24 @@
 
 
 .new-project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 28%;
     text-align: center;
     background-color: #ededed;
     padding: 8px;
     border-radius: 6px;
     box-shadow: 5px 7px 8px 1px rgba(173, 173, 171, 0.3);
+    transition: transform .3s;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.03);
+      transition: transform .3s;
+    }
+
+  h2 {
+    margin-bottom: 50px;
+  }
 }
