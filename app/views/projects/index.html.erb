@@ -66,13 +66,27 @@
       <p class="left-align-hobbies"><i class="fa-solid fa-dragon"></i>Sci-fi and heroic fantasy</p>
     </div>
   </div>
-  <div class="owl-carousel">
+
+  <!--Project cards-->
+
+  <div class="description-container">
     <% @projects.each do |project| %>
-      <div>
-        <%= project.title %>
-        <%= project.description %>
+      <div class="desc-card">
+        <h2 class="desc-card-title"><%= project.title %></h2>
+          <p class="justify-desc-text">
+            <%= project.description %>
+          </p>
       </div>
     <% end %>
+
+    <div class="desc-card">
+        <h2 class="desc-card-title">Soon</h2>
+          <p class="justify-desc-text">
+            Many more to come !
+            Current project : building a website for an auto-fix bike workshop
+            in Cahors "La Véloterie"
+          </p>
+      </div>
   </div>
       <%= render "contacts/contact_form" %>
 </div>
