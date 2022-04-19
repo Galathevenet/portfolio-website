@@ -1,9 +1,23 @@
 require 'open-uri'
 
+puts "cleaning DBs"
+
+Project.destroy_all
+User.destroy_all
+
+puts "DBs destroyed for good"
+
+puts "creating the one and only user"
+
 gala = User.create!(
-  username: 'gala',
-  description: 'this is me'
+  username: 'enqio',
+  description: 'this is me',
+  name: 'gala'
 )
+
+puts "User loaded inside the matrix"
+
+puts "creating projects..."
 
 woolks = Project.create!(
   title: 'Woolks',
@@ -95,3 +109,5 @@ pig_rent.photos.attach(
     }
   ]
 )
+
+puts "Projects are here !!"
