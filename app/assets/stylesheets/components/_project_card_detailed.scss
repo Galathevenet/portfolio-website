@@ -1,7 +1,22 @@
-.gray-background {
-  background-color: #c1c0bb;
-  padding: 10px;
-  border-radius: 4px;
-  opacity: 0.8;
-  position: relative;
+
+
+.project-card-detailed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .gray-background {
+    background-color: #c1c0bb;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0.8;
+    position: relative;
+  }
+
+  .carousel-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
 }

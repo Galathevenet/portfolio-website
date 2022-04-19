@@ -53,5 +53,79 @@
       </p>
       <a href="https://github.com/redcic75/pig_rent" target='_blank' class='btn-cv'>Project's Repo</a>
     </div>
+
+  <% elsif @project == @woolks %>
+  <div class="project-card-detailed">
+      <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650361230/Projects/Woolks/woolks_1_resized_jzvev4.png" class="d-block w-20 justify-center" alt="main page of app">
+            </div>
+            <div class="carousel-item">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650379258/Projects/Woolks/woolks_3_resized_yege0w.png" class="d-block w-20" alt="focus on a walk">
+            </div>
+            <div class="carousel-item">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650362110/Projects/Woolks/woolks_4_resized_czh3oj.png" class="d-block w-20" alt="focus on a second walk">
+            </div>
+            <div class="carousel-item">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374265/Projects/Woolks/woolks_5_resized_ngktmd.png" class="d-block w-20" alt="focus on modal">
+            </div>
+            <div class="carousel-item">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374018/Projects/Woolks/woolks_6_resized_veyiom.png" class="d-block w-20" alt="Rating a walk fom">
+            </div>
+            <div class="carousel-item">
+              <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374018/Projects/Woolks/woolks_7_resized_meda00.png" class="d-block w-20" alt="Account settings">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="project-card-detailed-text">
+        <div class="gray-background my-5">
+          <h3 class="mb-3">Details about the project</h3>
+          <p>
+            This is my <strong>final Le Wagon project</strong>. It was coded in less than 10 days, with 3 teammates.
+            We chose this subject as we wanted to learn how to <strong>integrate maps</strong> and <strong>active geotracking</strong>.
+            Walking dogs seemed to be the perfect subject as we almost all had at least one dog and knew the pain of having to walk them twice a day.
+            We wanted to create an <strong>easy to use and fun app</strong>.
+          </p>
+          <p>
+            If we had more time, we would have added <strong>more features</strong>:
+            <ul>
+              <li>
+                community side : being able to create group walks, see our friends near us on the map in real time
+              </li>
+              <li>
+                allow user to add hotspots (poop-bag dispensers, fountains, dog parks) while they walk.
+              </li>
+            </ul>
+          </p>
+          <a href="https://www.woolks.live" target='_blank' class='btn-cv'>View project</a>
+        </div>
+        <div class="gray-background my-5">
+          <h3 class="mb-3">Project Stack</h3>
+          <p>
+          Ruby - Ruby on Rails - Javascript - Stimulus -   HTML - SCSS - Bootstrap - PostgreSQL - Cloudinary - Devise - Git - Github - Heroku - Mapbox
+          </p>
+          <a href="https://github.com/Galathevenet/woolks" target='_blank' class='btn-cv'>Project's repo</a>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
