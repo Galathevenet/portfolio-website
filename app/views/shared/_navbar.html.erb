@@ -14,8 +14,8 @@
           <li class="nav-item dropdown">
             <%= link_to "My Projects", "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Woolks", "#", class: "dropdown-item" %>
-              <%= link_to "Pig Rent", "#", class: "dropdown-item" %>
+              <%= link_to "Woolks", project_path(@woolks), class: "dropdown-item" %>
+              <%= link_to "Pig Rent", project_path(@pig_rent), class: "dropdown-item" %>
               <%#= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
