@@ -26,4 +26,9 @@ p {
 a {
   font-family: $body-font;
   text-decoration: none;
+  color: $gray;
+
+    &:hover {
+      color: $gray;
+    }
   }

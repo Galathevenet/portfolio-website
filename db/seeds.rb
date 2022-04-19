@@ -21,7 +21,9 @@ puts "creating projects..."
 
 woolks = Project.create!(
   title: 'Woolks',
-  description: 'Mobile web app to walk your dog',
+  description: 'Team Project
+                Mobile web app to walk your dog
+                Coded in 10 days',
   user: gala
 )
 woolks.photos.attach(
@@ -67,7 +69,9 @@ woolks.photos.attach(
 
 pig_rent = Project.create!(
   title: 'PigRent',
-  description: 'Airbnb clone to rent pigs',
+  description: 'Team Project
+                Airbnb clone to rent pigs
+                Coded in 4 days',
   user: gala
 )
 pig_rent.photos.attach(

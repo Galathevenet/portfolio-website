@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
   def index
     @projects = Project.all
+    @woolks = Project.find_by(title: 'Woolks')
+    @pig_rent = Project.find_by(title: 'PigRent')
     @contact = Contact.new
   end
 

@@ -70,17 +70,26 @@
   <!--Project cards-->
 
   <div class="description-container">
-    <% @projects.each do |project| %>
-      <div class="desc-card">
-        <h2 class="desc-card-title"><%= project.title %></h2>
-          <p class="justify-desc-text">
-            <%= project.description %>
+      <div class="project-card">
+        <h2>Woolks</h2>
+          <p>
+            <strong>Team</strong> Project
           </p>
+          <p>
+            <i>4 teammates</i>
+          </p>
+          <p>
+            Collaborative mobile web app to walk your dog
+          </p>
+          <p>
+            Coded in <strong>10 days</strong>
+          </p>
+          <%= link_to project_path(@woolks), class: "card-size" do %>
       </div>
     <% end %>
 
-    <div class="project-card">
-        <h2 class="project-card-title">Soon</h2>
+    <div class="new-project-card">
+        <h2>Soon</h2>
           <p class="justify-desc-text">
             Many more to come !
             Current project : building a website for an auto-fix bike workshop
