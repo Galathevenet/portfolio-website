@@ -1,0 +1,57 @@
+<div class="container">
+  <h1 class="my-5 text-center"><%= @project.title %></h1>
+
+  <% if @project == @pig_rent %>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650362121/Projects/Pig_rent/pigrent_1_cctt1k.png" class="d-block w-100" alt="banner with a pig">
+        </div>
+        <div class="carousel-item">
+          <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374203/Projects/Pig_rent/Capture_d_e%CC%81cran_2022-04-19_a%CC%80_15.16.36_uytr2l.png" class="d-block w-100" alt="map of france">
+        </div>
+        <div class="carousel-item">
+          <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650362110/Projects/Pig_rent/pigrent_3_rqke80.png" class="d-block w-100" alt="map with close up of Gala's pig farm">
+        </div>
+        <div class="carousel-item">
+          <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374265/Projects/Pig_rent/Capture_d_e%CC%81cran_2022-04-19_a%CC%80_15.17.39_whupij.png" class="d-block w-100" alt="Pigs you can rent">
+        </div>
+        <div class="carousel-item">
+          <img src="https://res.cloudinary.com/dwuhtvghy/image/upload/v1650374018/Projects/Pig_rent/Capture_d_e%CC%81cran_2022-04-19_a%CC%80_15.13.31_rnx89s.png" class="d-block w-100" alt="Details for a pig">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="gray-background my-5">
+      <h3 class="mb-3">Details about the project</h3>
+      <p>
+        Airbnb clone done in a team of 4 as an exercise during Le Wagon bootcamp.
+        We wanted to create a fictional project with a <strong>realistic pain</strong>.
+        We wanted a simple and soft design. The most tricky part has been how to implement and
+        personnalize the <strong>mapbox API</strong>.
+      </p>
+    </div>
+    <div class="gray-background my-5">
+      <h3 class="mb-3">Project Stack</h3>
+      <p>
+      Ruby - Ruby on Rails - Javascript - HTML - SCSS - Bootstrap - PostgreSQL - Cloudinary - Devise - Git - Github - Heroku - Mapbox
+      </p>
+      <a href="https://github.com/redcic75/pig_rent" target='_blank' class='btn-cv'>Project's Repo</a>
+    </div>
+  <% end %>
+</div>

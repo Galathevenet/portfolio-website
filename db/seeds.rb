@@ -68,7 +68,7 @@ woolks.photos.attach(
 
 
 pig_rent = Project.create!(
-  title: 'PigRent',
+  title: 'Pig Rent',
   description: 'Team Project
                 Airbnb clone to rent pigs
                 Coded in 4 days',
