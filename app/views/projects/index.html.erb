@@ -7,6 +7,9 @@
 </div>
 
 <div class="container">
+
+  <!--Description cards-->
+
   <div class="description-container">
     <div class="desc-card description">
       <h2 class="desc-card-title">Hi, I'm Gala</h2>
@@ -62,7 +65,14 @@
       <p class="left-align-hobbies"><i class="fa-solid fa-dice-d20"></i>  Board games and video games</p>
       <p class="left-align-hobbies"><i class="fa-solid fa-dragon"></i>Sci-fi and heroic fantasy</p>
     </div>
-
   </div>
-    <%= render "contacts/contact_form" %>
+  <div class="owl-carousel">
+    <% @projects.each do |project| %>
+      <div>
+        <%= project.title %>
+        <%= project.description %>
+      </div>
+    <% end %>
+  </div>
+      <%= render "contacts/contact_form" %>
 </div>
