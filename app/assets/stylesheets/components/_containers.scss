@@ -1,6 +1,7 @@
 .description-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
   margin-top: 80px;
   margin-bottom: 80px;
   height: 500px;
