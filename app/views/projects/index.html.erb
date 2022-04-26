@@ -14,16 +14,16 @@
     <div class="desc-card description">
       <h2>Hi, I'm Gala</h2>
         <%= image_tag ("Gala_cropped.jpg"), :class => "avatar-bordered" %>
-        <p class="justify-desc-text">
+        <p class="justify-desc-text px-2">
           Cheerful junior developer <strong>looking for an opportunity</strong> to improve my coding
           skills with an experienced team.
         </p>
-        <p class="justify-desc-text">
+        <p class="justify-desc-text px-2">
           Learning enthusiast, I enjoy challenging myself
           on a daily basis. I'm looking for a <strong>transparent</strong> and <strong>supportive</strong> workspace where
           people believe in their product.
         </p>
-        <p class="justify-desc-text mb-3">
+        <p class="justify-desc-text px-2 mb-3">
           Living in the middle of the countryside in the south-west, I'm looking for a remote
           or partial-remote job opportunity. I'm <strong>an hour away from Bordeaux and Toulouse</strong> and <strong>three hours
           away from Paris</strong> with <strong>direct</strong> trains.
@@ -66,31 +66,10 @@
       <p class="left-align-hobbies"><i class="fa-solid fa-dice-d20"></i>  Board games and video games</p>
       <p class="left-align-hobbies"><i class="fa-solid fa-dragon"></i>Sci-fi and heroic fantasy</p>
     </div>
-  </div>
 
-  <!--Project cards-->
-
-  <div class="description-container">
-      <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650361230/Projects/Woolks/woolks_1_n6rgfw);">
-        <h2>Woolks</h2>
-          <p>
-            <strong>Team</strong> Project
-          </p>
-          <p>
-            <i>4 teammates</i>
-          </p>
-          <p>
-            Collaborative mobile web app to walk your dog
-          </p>
-          <p>
-            Coded in <strong>10 days</strong>
-          </p>
-        <%= link_to project_path(@woolks), class: "card-link" do %>
-        <% end %>
-      </div>
-
-      <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650370644/Projects/Pig_rent/Capture_d_e%CC%81cran_2022-04-19_a%CC%80_14.17.15_b2sxf1.png);">
-        <h2>Pig Rent</h2>
+      <!--Project cards-->
+    <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650361230/Projects/Woolks/woolks_1_n6rgfw);">
+      <h2>Woolks</h2>
         <p>
           <strong>Team</strong> Project
         </p>
@@ -98,16 +77,34 @@
           <i>4 teammates</i>
         </p>
         <p>
-          Airbnb Clone to connect farmers and individuals
+          Collaborative mobile web app to walk your dog
         </p>
         <p>
-          Coded in <strong>4 days</strong>
+          Coded in <strong>10 days</strong>
         </p>
-        <%= link_to project_path(@pig_rent), class: "card-link" do %>
-        <% end %>
-      </div>
+      <%= link_to project_path(@woolks), class: "card-link" do %>
+      <% end %>
+    </div>
 
-    <div class="new-project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650976992/Projects/veloterie_esqopl.jpg);">
+    <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650370644/Projects/Pig_rent/Capture_d_e%CC%81cran_2022-04-19_a%CC%80_14.17.15_b2sxf1.png);">
+      <h2>Pig Rent</h2>
+      <p>
+        <strong>Team</strong> Project
+      </p>
+      <p>
+        <i>4 teammates</i>
+      </p>
+      <p>
+        Airbnb Clone to connect farmers and individuals
+      </p>
+      <p>
+        Coded in <strong>4 days</strong>
+      </p>
+      <%= link_to project_path(@pig_rent), class: "card-link" do %>
+      <% end %>
+    </div>
+
+    <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwuhtvghy/image/upload/v1650976992/Projects/veloterie_esqopl.jpg);">
       <h2>Coming Soon</h2>
       <p>
         <strong>Solo</strong> Project

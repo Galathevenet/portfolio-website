@@ -1,4 +1,5 @@
 .project-card {
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,31 +37,4 @@
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-
-
-.new-project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 28%;
-    text-align: center;
-    background-color: #ededed;
-    padding: 8px;
-    border-radius: 6px;
-    box-shadow: 5px 7px 8px 1px rgba(173, 173, 171, 0.3);
-    transition: transform .3s;
-    transform: scale(1);
-    color: $light-gray;
-    text-shadow: 1px 1px $gray;
-
-    &:hover {
-      transform: scale(1.03);
-      transition: transform .3s;
-    }
-
-  h2 {
-    margin-bottom: 50px;
-  }
 }
